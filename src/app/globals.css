@@ -1,8 +1,11 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primaryColor: #050B20;
 }
 
 @theme inline {
@@ -22,5 +25,30 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "National Park", sans-serif;
+}
+
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body.dark {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
