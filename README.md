@@ -20,11 +20,10 @@ The Car Finder Web App allows users to search for cars based on various filters 
 
 ## Technology Stack
 
-- **Frontend Framework**: Next.js 
-- **State Management**: `useState`, `useEffect` 
-- **CSS Framework**: TailwindCSS 
+- **Frontend Framework**: Next.js
+- **State Management**: `useState`, `useEffect`
+- **CSS Framework**: TailwindCSS
 - **Local Storage**: Used to store wishlist data
-
 
 ## Features Breakdown
 
@@ -62,15 +61,15 @@ Fetch car data from an external API using Next.js API routes.
 
 Display a loading state while fetching data and handle any errors gracefully with appropriate messages.
 
-### 7. Dark Mode Toggle 
+### 7. Dark Mode Toggle
 
 The user can toggle between light and dark themes for better accessibility and preference.
 
-### 8. Sorting 
+### 8. Sorting
 
 Users can sort the car results based on price, either from low to high or high to low.
 
-### 9. UI Animations 
+### 9. UI Animations
 
 Smooth animations are applied when adding/removing cars from the wishlist or when interacting with the UI elements.
 
@@ -90,4 +89,4 @@ The API is set up using Next.js API routes for fetching car data. It handles par
 
 ## Deployed Application
 
-Check out the live version of the app here: [Car Finder](https://localhost:3000/)
+Check out the live version of the app here: [Car Finder](https://car-finder-web-app.vercel.app/)
