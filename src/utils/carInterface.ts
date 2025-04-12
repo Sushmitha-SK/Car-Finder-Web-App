@@ -26,7 +26,6 @@ export interface Car {
   price: number;
   fuelType: string;
   seatingCapacity: number;
-  [key: string]: any;
   mileage: number;
   transmission: string;
   description: string;

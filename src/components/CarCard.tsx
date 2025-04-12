@@ -18,6 +18,7 @@ const CarCard = ({ car }: { car: Car }) => {
             ? removeFromWishlist(car._id)
             : addToWishlist(car._id);
 
+        console.log('wishlistinfo', updatedWishlist)
         setIsInWishlist(!isInWishlist);
         window.dispatchEvent(new Event("wishlistUpdate"));
     };

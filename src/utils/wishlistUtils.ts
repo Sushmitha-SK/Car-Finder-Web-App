@@ -14,7 +14,7 @@ export const addToWishlist = (id: string): string[] => {
 
 export const removeFromWishlist = (id: string): string[] => {
     const wishlist = getWishlist();
-    const updatedWishlist = wishlist.filter((item:any) => item !== id);
+    const updatedWishlist = wishlist.filter((item: string) => item !== id);
     localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
     return updatedWishlist;
 };

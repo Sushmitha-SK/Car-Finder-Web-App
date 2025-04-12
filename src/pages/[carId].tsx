@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react';
 import { FaCar, FaGasPump, FaHeart, FaMapMarkerAlt, FaRoad, FaUsers, FaCalendarAlt } from 'react-icons/fa';
 import { IoIosPricetags } from "react-icons/io";
 import '@/app/globals.css';
-import { getWishlist} from "../utils/wishlistUtils";
+import { addToWishlist, getWishlist, removeFromWishlist } from "../utils/wishlistUtils";
 import { Car } from '@/utils/carInterface';
 
 const CarDetails = () => {
@@ -37,6 +37,11 @@ const CarDetails = () => {
   };
 
   const toggleWishlist = () => {
+    const updatedWishlist = isInWishlist
+      ? removeFromWishlist(carId)
+      : addToWishlist(carId);
+
+    console.log('wishlistinfo', updatedWishlist)
     setIsInWishlist(!isInWishlist);
     window.dispatchEvent(new Event("wishlistUpdate"));
   };
